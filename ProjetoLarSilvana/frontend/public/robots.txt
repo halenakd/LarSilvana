@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+# isso serve para instruir os motores de busca
+
+User-agent: *
+Disallow:
+
+# nesse caso, eles estao podendo rastrear e indexar todo o conteudo do site
+
