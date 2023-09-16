@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'InterVariable';
+    src: url('fonts/Inter-VariableFont.ttf') format('truetype'),
+}
+
+body {
+    font-family: 'InterVariable', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    font-size: larger;
+    font-weight: 300;
+}
+
+[class*="btn"]{
+    border-radius: 40px;
+    font-weight: 600;
+    border-width: 0;
+    outline-style: none;
+}
+
+[class*="display"]{
+    font-weight: 550;
+}
+
+.round-image {
+    border-radius: 40px;
+}
+
+.highlight{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    line-height: 70%;
+}
