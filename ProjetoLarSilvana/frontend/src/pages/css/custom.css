@@ -91,6 +91,10 @@ p {
   font-weight: 550;
 }
 
+.top-header{
+  overflow: hidden;
+}
+
 .round-image {
   border-radius: 40px;
 }
