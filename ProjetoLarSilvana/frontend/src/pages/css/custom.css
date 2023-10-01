@@ -236,7 +236,7 @@ header #logo{
 }
 
 .form-select{
- background-color: #E7E7E7;
+  background-color: #E7E7E7;
 }
 
 #adotar{
@@ -267,4 +267,78 @@ header #logo{
 
 #help p{
   font-size: 25px;
+}
+
+/* PÁGINA CONTATO */
+
+#contact-us h1{
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.text{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.map-embed{
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 750px;
+  height: 450px;
+  width: 100%;
+}
+
+.contact-link{
+  color: var(--primary);
+  transition: all 0.2s;
+}
+
+.contact-link-text{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.visit-us{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+/* PÁGINA FAQ */
+#faq h1{
+  font-size: 50px;
+  color: var(--primary);
+}
+
+#faq a{
+  color: #2F2F2F;
+}
+
+.question-container{
+  border-color: #D9D9D9;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 15px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.question-headline{
+  color: black !important;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.question-content{
+  color: #5B5B5B;
+  font-weight: 450;
+  font-size: 20px;
+}
+
+.toggle-collapsible{
+  color: none;
+  text-decoration: none;
+  transition: all 0.2s;
 }
