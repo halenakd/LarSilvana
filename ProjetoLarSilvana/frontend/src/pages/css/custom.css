@@ -1,7 +1,8 @@
-body,
-html {
-  font-family: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body, html {
+  font-family: 'Roboto', sans-serif;
 }
+
 
 /* INDEX */
 #img-top-dogs{
@@ -56,7 +57,8 @@ html {
   color: var(--primary);
 }
 
-h1 {
+#slogan,
+#toAdopt h1 {
   font-weight: 700;
   color: #fff;
 }
@@ -111,12 +113,12 @@ p {
 /*NAVBAR*/
 
 
-a {
+header a {
   color: var(--primary);
   
 }
 
-a:hover {
+header a:hover {
   color: var(--secondary);
 }
 
@@ -257,7 +259,6 @@ header #logo{
 
 
 /* PÁGINA DOAR */
-
 #help{
   text-align: center;
   margin-top: 3%;
@@ -268,6 +269,72 @@ header #logo{
 #help p{
   font-size: 25px;
 }
+
+#payment{
+  margin-top: 2%;
+  margin-bottom: 100px;
+}
+
+
+#payment .col .p-3{
+  background-color: #F2F2F2;
+  border-radius: 10%;
+  height: 110%;
+}
+
+#payment .col .p-3:hover{
+  color: var(--primary);
+}
+
+#payment a{
+  text-decoration: none;
+}
+
+#payment h2{
+  color: black;
+}
+
+
+#cash,
+#other{
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+}
+
+#help h1{
+  font-size: 50px;
+  color: var(--primary);
+}
+
+#buttonModal{
+  width: 30%;
+  background-color: var(--primary);
+}
+
+.container.mt-5{
+  margin-top: 30%;
+}
+
+#tabs .nav-link,
+#payment h6{
+  color: #5F5F5F;
+  
+}
+
+#tabs .nav-link.active{
+  background-color: var(--primary);
+  color: #fff;
+
+}
+
+.modal-body li{
+  list-style: none;
+  text-align: left;
+}
+
 
 /* PÁGINA CONTATO */
 
