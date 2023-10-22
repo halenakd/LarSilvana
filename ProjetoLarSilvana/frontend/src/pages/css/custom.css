@@ -1,411 +1,344 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
 body, html {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-
-/* INDEX */
-#img-top-dogs{
-  max-height: 90vh; 
-  object-fit: cover;
+/* GLOBAL SELECTORS */
+p{
+    font-size: 20px;
+    font-weight: 400;
 }
 
-#img-logo{
-  max-height: 70vh; 
-  padding-left: 15%;
+h1{
+    font-size: 35px;
+    font-weight: 700;
 }
 
-
-#slogan-md{
-  margin-left: 2%; 
-  padding-right: 15%;
+h2{
+    font-size: 30px;
+    font-weight: 600;
 }
 
-#slogan-sm{
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
+h3{
+    font-size: 25px;
+    font-weight: 600;
 }
 
-
-.row .pb-3{
-  max-width: 900px; 
-  margin: auto;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-.row button,
-.row button:hover
-{
-  background-color: var(--primary); 
-  color: #fff;
+/* CLASSES & ID's */
+/* GERAL */
+.white-text{
+    color: white;
 }
 
-#toAdopt{
-  background-color: var(--primary); 
-  padding-left: 10%; 
-  padding-right: 10%;
-
+.purple-text{
+    color: var(--primary)
 }
 
-.text-sm-left{
-  color: #fff;
+.purple-background{
+    background-color: var(--primary);
 }
 
-.gap-2 button,
-.gap-2 button:hover{    
-  background-color: #fff; 
-  color: var(--primary);
+.display-2{
+    font-weight: 600;
 }
 
-#slogan,
-#toAdopt h1 {
-  font-weight: 700;
-  color: #fff;
+.section-heading-1{
+    font-size: 50px;
 }
 
-#about h1{
-  color: var(--primary);
+.section-heading-2{
+    font-size: 35px;
 }
 
-h2 {
-  font-weight: 700;
+.section-heading-3{
+    font-size: 30px;
 }
 
-h3 {
-  font-weight: 500;
-  color: #fff; 
-  font-size: larger;
+.section-subheading{
+    font-size: 20px;
+    font-weight: 600;
 }
 
-p {
-  font-size: larger;
-  font-weight: 300;
+.text-1{
+    font-size: 25px;
 }
 
-[class*="btn"]{
-  border-radius: 40px;
-  font-weight: 600;
-  border-width: 0;
-  outline-style: none;
+.text-2{
+    font-size: 20px;
 }
 
-[class*="display"]{
-  font-weight: 550;
+.paragraph-padding{
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.top-header{
-  overflow: hidden;
+.button-purple{
+    color: white !important;
+    background-color: var(--primary) !important;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
-.round-image {
-  border-radius: 40px;
+.button-white{
+    color: var(--primary) !important;
+    background-color: white !important;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
-.highlight{
-  display: inline-block;
-  text-align: center;
-  width: auto;
-  height: auto;
-  line-height: 70%;
-  background-color:var(--primary);
+.button-purple:hover,
+.button-purple:active{
+    background-color: var(--primary-dark) !important;
 }
 
-/*NAVBAR*/
-
-
-header a {
-  color: var(--primary);
-  
+.button-white:hover,
+.button-white:active{
+    background-color: lightgray !important;
 }
 
-header a:hover {
-  color: var(--secondary);
+.image-round{
+    border-radius: 40px;
 }
 
-
-header {
-  background-color: transparent;
-  /*box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);*/
-  transition: background ease-out 0.2s;
-
+/* NAVBAR */
+#logo{
+    width: 100px;
+    height: 100px;
 }
 
-header .container-fluid {
-  display: flex;
-  justify-content: center;
+header a{
+    color: var(--primary);
 }
 
-header .navbar-collapse {
-  font-size: larger;
+header a:hover{
+color: var(--secondary);
 }
 
-header .nav-link {
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #808080;
-  border-bottom: solid 4px transparent;
+header{
+    background-color: transparent;
+    /*box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);*/
+    transition: background ease-out 0.2s;
 }
 
-header .nav-link:hover {
-  border-bottom: solid 4px var(--secondary);
-  color: var(--secondary);
+header .container-fluid{
+    display: flex;
+    justify-content: center;
+}
 
+header .navbar-collapse{
+    font-size: larger;  
+}
+
+header .nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #808080;
+    border-bottom: solid 4px transparent;
+}
+
+header .nav-link:hover{
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
 }
 
 header .btn-primary,
 header .btn-primary:hover{
-  background-color: var(--primary);
-  border-color: var(--primary);
-  border-radius: 15px;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 15px;
 }
 
 header .alert-primary{
-  background-color: var(--secondary);
-  color: #fff;
-  padding-left: 40px;
-  padding-right: 40px;
-
+    background-color: var(--secondary);
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .navbar-nav .nav-link.active{
-  border-bottom: solid 4px var(--secondary);
-  color: var(--secondary)
-  }
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary)
+}
 
-.navbar-toggler-icon {
-
+.navbar-toggler-icon{
     width: 40px;
-    height:  40px;
+    height: 40px;
     border-radius: 10px;
-  }
-
-  
-/*PÁGINA ADOTAR*/
-
-.form-select{
-  color: #808080;
-  border-radius: 15px;
 }
 
-.h-100{
-  margin-top: 20px;
-  border-radius: 20px;
-  border: 3px solid var(--primary);
-  background-color: #E7E7E7;
+/* INDEX */
+#img-top-dogs{
+    max-height: 90vh; 
+    object-fit: cover;
 }
 
-
-.col .btn-primary{
-  background-color: var(--primary);
-  border-radius: 20px;
-  border-color: var(--primary);
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  
+#img-logo{
+    max-height: 70vh; 
+    padding-left: 15%;
 }
 
-.card-img-top{
-  width: auto;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+#slogan{
+    color: white;
+    overflow: hidden;
+    font-weight: 800;
 }
 
-
-.card.h-100 h5, h6{
-  color: var(--primary-dark);
+#slogan-md{
+    margin-left: 2%; 
+    padding-right: 15%;
 }
 
-header #logo{
-  width: 100px;
-  height: 100px;
-
+#slogan-sm{
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
-.d-flex.justify-content-end{
-  width: 50px;
-  position: absolute;
-  top: 50%;
-  left: 75%;
-}
+.highlight{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    line-height: 70%;
+    background-color: var(--primary);
+}    
 
-.d-flex.justify-content-end img{
-  color: var(--primary);
+/* ADOTAR */
+.alert{
+    font-size: 20px;
+    border-radius: 0;
 }
 
 .form-select{
-  background-color: #E7E7E7;
+    color: #808080;
+    background-color: #e7e7e7;
+    border-radius: 15px;
 }
 
-#adotar{
-  background-color: var(--primary);
-  text-align: center;
-  color: white;
-  margin-top: 20px;
+.card-image{
+    width: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#adotar .btn-primary{
-  color: var(--primary);
-  background-color: #fff
+.adopt-button{
+    width: 100%;
+    min-height: 40px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-#adotar h1{
-  color: #fff;
+.card{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 4px solid var(--primary);
+    background-color: #E7E7E7;
 }
 
-
-/* PÁGINA DOAR */
-#help{
-  text-align: center;
-  margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
+/*DOAR*/
+.donation-method{
+    color: #808080;
 }
 
-#help p{
-  font-size: 25px;
+.donation-method:active,
+.donation-method:hover{
+    color: #808080;
+    outline-width: 2px;
 }
 
-#donate{
-  margin-top: 2%;
-  margin-bottom: 100px;
+#tabs .donation-method.active{
+    background-color: var(--primary);
+    color: #fff;
 }
 
-
-#donate .col .p-3{
-  background-color: #F2F2F2;
-  border-radius: 10%;
-  height: 110%;
+.donation-amount-button{
+    background-color: #f2f2f2;
+    border-radius: 20px;
 }
 
-#donate .col .p-3:hover{
-  color: var(--primary);
+.donation-amount{
+    font-weight: 700;
 }
 
-#donate a{
-  text-decoration: none;
+.donation-description{
+    color: #474747;
 }
 
-#donate h2{
-  color: black;
+.donation-card{
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-#cash,
-#other{
-  width: 50%;
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 2%;
+.donation-card-header{
+    background-color: #e7e7e7;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-#help h1{
-    font-size: 50px;
+.donation-card-body{
+    border: #E7E7E7 solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#cash .donation-card-body{
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* CONTATO */
+.contact-link{
     color: var(--primary);
 }
 
-#buttonModal{
-  width: 30%;
-  background-color: var(--primary);
-}
-
-.container.mt-5{
-  margin-top: 30%;
-}
-
-#tabs .nav-link,
-#donate h6{
-  color: #5F5F5F;
-  
-}
-
-#tabs .nav-link.active{
-  background-color: var(--primary);
-  color: #fff;
-
-}
-
-.modal-body li{
-  list-style: none;
-  text-align: left;
-}
-
-
-/* PÁGINA CONTATO */
-
-#contact-us h1{
-  font-size: 50px;
-  color: var(--primary);
-}
-
-.text{
-  font-size: 25px;
-  font-weight: 300;
+.contact-link-text{
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .map-embed{
-  border-radius: 15px;
-  overflow: hidden;
-  max-width: 750px;
-  height: 450px;
-  width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 750px;
+    height: 450px;
+    width: 100%;
 }
 
-.contact-link{
-  color: var(--primary);
-  transition: all 0.2s;
-}
-
-.contact-link-text{
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.visit-us{
-  font-size: 25px;
-  font-weight: 600;
-}
-
-
-/* PÁGINA FAQ */
-#faq h1{
-  font-size: 50px;
-  color: var(--primary);
-}
-
-#faq a{
-  color: #2F2F2F;
-}
-
+/* FAQ */
 .question-container{
-  border-color: #D9D9D9;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 15px;
-  padding-bottom: 1%;
-  padding-top: 1%;
+    border-color: #D9D9D9;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 .question-headline{
-  color: black !important;
-  font-weight: 600;
-  font-size: 22px;
-  margin-bottom: 0;
+    color: black !important;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 0;
 }
 
 .question-content{
-  color: #5B5B5B;
-  font-weight: 450;
-  font-size: 20px;
+    color: #5B5B5B;
+    font-weight: 450;
+    font-size: 20px;
 }
 
 .toggle-collapsible{
-  color: none;
-  text-decoration: none;
-  transition: all 0.2s;
+    color: none;
+    text-decoration: none;
+    transition: all 0.2s;
 }

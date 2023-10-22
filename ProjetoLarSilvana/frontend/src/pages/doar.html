@@ -45,74 +45,73 @@
   </header>
 
   <section id="help">
-    <h1>Como Ajudar?</h1>
-    <p>Existem centenas de animais no abrigo, enquanto eles procuram suas novas famílias, precisam de cuidados, ração,
+    <h1 class="section-heading-1 purple-text text-center pt-4">Como Ajudar?</h1>
+    <p class="text-1 text-center paragraph-padding">Existem centenas de animais no abrigo, enquanto eles procuram suas novas famílias, precisam de cuidados, ração,
       entre outras necessidades que trazem custos para o abrigo.</p>
-    <p>São as doações que nos permitem dar mais uma chance à vida para os bichinhos. Elas podem ser recorrentes ou
+    <p class="text-1 text-center paragraph-padding">São as doações que nos permitem dar mais uma chance à vida para os bichinhos. Elas podem ser recorrentes ou
       únicas, toda ajuda significa muito! </p>
   </section>
 
   <section id="tabs" class="container mt-5">
     <ul class="nav nav-tabs" id="myTabs" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="home"
+        <a class="nav-link donation-method active" id="home-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="home"
           aria-selected="true">Pix</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="profile"
+        <a class="nav-link donation-method" id="profile-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="profile"
           aria-selected="false">Cartão de Crédito (Única)</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="messages"
+        <a class="nav-link donation-method" id="messages-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="messages"
           aria-selected="false">Cartão de Crédito (Recorrente)</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="settings"
+        <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="settings"
           aria-selected="false">Depósito</a>
       </li>
 
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#other" role="tab" aria-controls="settings"
+        <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#other" role="tab" aria-controls="settings"
           aria-selected="false">Outros</a>
       </li>
     </ul>
 
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content my-3" id="myTabContent">
       <section id="donate" class="tab-pane fade show active text-center">
         <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-          <div class="col align-items-center">
+          <div class="d-flex col align-items-center">
             <a href=""> 
-            <div class="p-3">
-              <h2>R$ 10</h2>
-              <h6>Alimenta um filhote por 10 dias.</h6>
-         
+            <div class="p-3 donation-amount-button">
+              <h2 class="donation-amount">R$ 10</h2>
+              <h6 class="donation-description">Alimenta um filhote por 10 dias.</h6>
             </div>
             </a>
           </div>
 
-          <div class="col">
+          <div class="d-flex col align-items-center">
             <a href="">
-            <div class="p-3">
-              <h2>R$ 25</h2>
-              <h6>Equivale a remédio vermifugo para 20 cães.</h6>
+            <div class="p-3 donation-amount-button">
+              <h2 class="donation-amount">R$ 25</h2>
+              <h6 class="donation-description">Equivale a remédio vermifugo para 20 cães.</h6>
             </div>
           </a>
           </div>
 
-          <div class="col">
+          <div class="d-flex col align-items-center">
             <a href="">
-            <div class="p-3">
-              <h2>R$ 50</h2>
-              <h6>Alimenta cinco filhotes por 10 dias.</h6>
+            <div class="p-3 donation-amount-button">
+              <h2 class="donation-amount">R$ 50</h2>
+              <h6 class="donation-description">Alimenta cinco filhotes por 10 dias.</h6>
             </div>
             </a>
           </div>
 
-          <div class="col">
+          <div class="d-flex col align-items-center">
             <a href="">
-            <div class="p-3">
-              <h2>Outro Valor</h2>
-              <h6>Clique aqui para escolher o valor.</h6>
+            <div class="p-3 donation-amount-button">
+              <h2 class="donation-amount">Outro Valor</h2>
+              <h6 class="donation-description">Clique aqui para escolher o valor.</h6>
             </div>
             </a>
           </div>
@@ -120,11 +119,11 @@
       </section>
 
       <section class="tab-pane fade" id="cash">
-        <div class="card">
-          <div class="card-header">
+        <div class="donation-card">
+          <div class="donation-card-header">
             Dados Bancários
           </div>
-          <div class="card-body">
+          <div class="donation-card-body">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quis cupidiuptates non ex laudantium
             ipsa consequuntur. Beatae exercitationem quidem voluptatibus alias ipsum.
           </div>
@@ -132,12 +131,12 @@
       </section>
 
       <section class="tab-pane fade" id="other">
-        <div class="card">
-          <div class="card-body">
+        <div class="donation-card">
+          <div class="donation-card-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus dolorum temporibus nemo
             dolores quia neque facilis beatae ullam vitae totam iste voluptate laborum, impedit illum rem eligendi magni
-            dicta! <br>
-            <button type="button" id="buttonModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            dicta! <br><br>
+            <button type="button" id="buttonModal" class="btn btn-primary button-purple" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Abrir Lista
             </button>
           </div>
@@ -148,7 +147,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Lista de produtos em demanda</h1>
+                <h1 class="modal-title fs-5 purple-text" id="exampleModalLabel">Lista de produtos em demanda</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
