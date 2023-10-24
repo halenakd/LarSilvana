@@ -1,42 +1,64 @@
-const fs = require("fs");
-const Imagem = require("../models/imagem");
+const router = require("express").Router();
 
-exports.create = async (req, res) => {
-  try {
-    const { name } = req.body;
+const Imagem = require("../dataBase/models/imagem");
 
-    const file = req.file;
-    const picture = new Picture({
-      name,
-      src: file.path,
-    });
+const getImagens = async (req, res) => {
+    try {
+        const imagens = await Imagem.find();
 
-    await picture.save();
-    res.json(picture);
-  } catch (err) {
-    res.status(500).json({ message: "Erro ao salvar a imagem." });
-  }
-};
+        return res.json(imagens);
 
-exports.remove = async (req, res) => {
-  try {
-    const picture = await Picture.findById(req.params.id);
-    if (!picture) {
-      return res.status(404).json({ message: "Imagem não encontrada" });
+    } catch (error) {
+        return res.status(500).json({ error: 'Erro ao buscar imagens.' });
     }
-    fs.unlinkSync(picture.src);
-    await picture.remove();
-    res.json({ message: "Imagem removida com sucesso" });
-  } catch (err) {
-    res.status(500).json({ message: "Erro ao remover a imagem" });
+};
+
+const createImagem = async (req, res) => {
+    try {
+        const { originalname: name, size, key, location: url = "" } = req.file;
+
+        const imagem = await Imagem.create({
+            name,
+            size,
+            key,
+            url
+        });
+
+        return res.json(imagem);
+
+    } catch (error) {
+    console.log(error)
+    return res.status(500).json({ error: 'Erro ao criar a imagem.' });
   }
 };
 
-exports.findAll = async (req, res) => {
-  try {
-    const pictures = await Picture.find();
-    res.json(pictures);
-  } catch (err) {
-    res.status(500).json({ message: "Erro ao buscar as imagens." });
-  }
+const deleteImagem = async (req, res) => {
+    try {
+
+        const removedImagem = await Imagem.findOneAndDelete({_id: req.params.imagemID});
+        res.status(200).json(removedImagem);
+
+        /*const imagem = await Imagem.findById(req.params.imagemID);
+
+        if (!imagem) {
+            return res.status(404).json({ error: 'Imagem não encontrada.' });
+        }
+
+        await imagem.remove();
+
+        console.log('Imagem removida');*/
+
+        return res.send();
+
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ error: 'Erro ao excluir a imagem.' });
+    }
+
+};
+
+module.exports = {
+    getImagens,
+    createImagem,
+    deleteImagem
 };

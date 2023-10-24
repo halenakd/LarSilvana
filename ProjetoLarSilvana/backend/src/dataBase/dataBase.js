@@ -2,7 +2,7 @@ const mongoose = require('mongoose'); // biblioteca mongoose
 
 // conexao com o banco de dados
 // 127.0.0.1 -> localhost e 27017 -> porta
-mongoose.connect('mongodb://127.0.0.1:27017/larSilvana', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://127.0.0.1:27017/LS', { useNewUrlParser: true, useUnifiedTopology: true })
 
 // o connect vai retornar uma promise
 // sucesso
