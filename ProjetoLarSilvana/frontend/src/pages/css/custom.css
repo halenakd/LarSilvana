@@ -342,3 +342,34 @@ header .alert-primary{
     text-decoration: none;
     transition: all 0.2s;
 }
+
+/* LOGIN */ 
+
+#login-form{
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.login-input{
+    border-radius: 30px;
+    border-width: 3px;
+    border-color: #808080;
+    border-style: solid;
+    width: 100%;
+    font-size: x-large;
+    font-weight:600;
+    padding: 10px;
+    outline: none;
+}
+
+.login-label{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: x-large;
+}
+
+#login-button{
+    width: 100%;
+    border-radius: 30px;
+    font-size: x-large;
+}
