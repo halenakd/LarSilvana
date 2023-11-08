@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/TabIcon.ico" sizes="32x32" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Lar Silvana | Catálogo</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+      <img id="logo" src="assets/logo.png" class="img-fluid" />
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sobre o Abrigo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="adotar.html">Adotar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="doar.html">Doar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary">ADOTAR</button>
+      </div>
+    </nav>
+  </div>
+
+  </header>
+
+
+  <section class="container pb-2" id="filtros">
+    <h6 class="purple-text">Filtros:</h6>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <select id="inputPorte" class="form-select" aria-placeholder="Porte">
+          <option selected>Porte</option>
+          <option>Pequeno</option>
+          <option>Médio</option>
+          <option>Grande</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+
+        <select id="inputSexo" class="form-select">
+          <option selected>Sexo</option>
+          <option>Macho</option>
+          <option>Fêmea</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <select id="inputIdade" class="form-select">
+          <option selected>Idade</option>
+          <option>0-3</option>
+          <option>4-7</option>
+        </select>
+      </div>
+    </form>
+  </section>
+
+  <section class="container" id="catalogo">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <div class="col">
+        <a href="adicionar.html">
+          <div class="card">
+            <div class="mt-auto text-center">
+              <i class="fa-regular fa-plus" id="add-icon"></i>
+            </div>
+            <div class="d-flex justify-content-center mt-auto mb-3 px-3">
+              <button class="btn btn-primary button-purple adopt-button">ADICIONAR CACHORRO</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="assets/dog2.jpeg" class="card-image" alt="...">
+          <div class="card-body">
+            <h5 class="purple-text"><strong>Nome</strong></h5>
+            <h6 class="purple-text">Porte<h6>
+            <h6 class="purple-text pb-2">Idade</h6>
+          </div>
+          <div class="d-flex justify-content-center mt-auto mb-3 px-3">
+            <button class="btn btn-primary adopt-button button-red">REMOVER CACHORRO</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="assets/dog3.jpeg" class="card-image" alt="...">
+          <div class="card-body">
+            <h5 class="purple-text"><strong>Nome</strong></h5>
+            <h6 class="purple-text">Porte<h6>
+            <h6 class="purple-text pb-2">Idade</h6>
+          </div>
+          <div class="d-flex justify-content-center mt-auto mb-3 px-3">
+            <button class="btn btn-primary adopt-button button-red">REMOVER CACHORRO</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="assets/dog4.jpeg" class="card-image" alt="...">
+          <div class="card-body">
+            <h5 class="purple-text"><strong>Nome</strong></h5>
+            <h6 class="purple-text">Porte<h6>
+            <h6 class="purple-text pb-2">Idade</h6>
+          </div>
+          <div class="d-flex justify-content-center mt-auto mb-3 px-3">
+              <button class="btn btn-primary adopt-button button-red">REMOVER CACHORRO</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  </div>
+
+  <script src="bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ee611774f3.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

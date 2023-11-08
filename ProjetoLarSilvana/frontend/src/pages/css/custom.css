@@ -239,6 +239,7 @@ header .alert-primary{
 
 .card{
     margin-top: 20px;
+    height: 100%;
     border-radius: 20px;
     border: 4px solid var(--primary);
     background-color: #E7E7E7;
@@ -289,6 +290,7 @@ header .alert-primary{
 .donation-card-body{
     border: #E7E7E7 solid 2px;
     border-radius: 10px;
+    height: 100%;
     padding: 20px;
 }
 
@@ -372,4 +374,44 @@ header .alert-primary{
     width: 100%;
     border-radius: 30px;
     font-size: x-large;
+}
+
+/* CATÁLOGO (admin) */
+.button-red{
+    color: white !important;
+    background-color: #eb0000 !important;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#add-icon{
+    max-width: 100%;
+    font-size: 200px;
+    overflow: hidden;
+    color: var(--primary);
+}
+
+/* ADICIONAR */ 
+#add-dog-info{
+    border-width: 3px;
+    padding: 40px;
+    border-color: #808080;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#add-dog-button{
+    font-size: x-large;
+    padding: 10px;
+    min-width: 400px;
+    max-width: 100%;
+}
+
+#add-image{
+    background-color: #F3F3F3;
+    border-width: 4px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-radius: 20px;
 }

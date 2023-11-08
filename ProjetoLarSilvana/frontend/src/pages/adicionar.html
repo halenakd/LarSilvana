@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/TabIcon.ico" sizes="32x32" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Lar Silvana | Adicionar</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav id="navbar" class="navbar navbar-expand-md navbar-light">
+			<img id="logo" src="assets/logo.png" class="img-fluid" />
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				<a class="nav-link" href="index.html">Sobre o Abrigo</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="adotar.html">Adotar</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="doar.html">Doar</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="contato.html">Contato</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="faq.html">FAQ</a>
+				</li>
+			</ul>
+			<button type="button" class="btn btn-primary">ADOTAR</button>
+			</div>
+		</nav>
+		</div>
+	</header>
+
+	<section class="paragraph-padding mx-5">
+		<h1 class="section-heading-1 purple-text text-center pt-4 pb-3">Adicionar Cachorro</h1>
+
+		<form id="add-dog-info">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<label class="login-label" for="username">Nome</label><br>
+					<input class="login-input p-2"type="text" id="username" name="username"/><br>
+					<label class="login-label" for="username">Porte</label><br>
+					<select id="addPorte" class="form-select p-3" aria-placeholder="Porte">
+						<option>Pequeno</option>
+						<option>Médio</option>
+						<option>Grande</option>
+					</select>
+					<label class="login-label" for="username">Sexo</label><br>
+					<select id="addSexo" class="form-select p-3" aria-placeholder="Sexo">
+						<option>Macho</option>
+						<option>Fêmea</option>
+					</select>
+					<label class="login-label" for="username">Idade</label><br>
+					<select id="addIdade" class="form-select p-3" aria-placeholder="Idade">
+						<option>0-3</option>
+						<option>4-7</option>
+					</select>
+				</div>
+				<a class="col-md-6 col-sm-12 text-center d-flex align-items-center" id="add-image" href="">
+					<div class="mx-auto">
+						<i class="fa-regular fa-image fa-7x purple-text"></i>
+						<h3 class="purple-text">Adicionar imagem</h3>
+					</div>
+				</a>
+			</div>
+		</form>
+
+		<div class="text-center py-3">
+			<input id="add-dog-button" class="button-purple" type="submit" value="ADICIONAR" name="add" />
+		</div>
+	</section>
+
+	<script src="https://kit.fontawesome.com/ee611774f3.js" crossorigin="anonymous"></script>
+</body>
