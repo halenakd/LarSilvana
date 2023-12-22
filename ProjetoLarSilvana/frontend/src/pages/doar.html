@@ -38,146 +38,264 @@
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-primary">ADOTAR</button>
+          <a type="button" class="btn btn-primary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdL-molge0ra8kyIYxCJTMuDNP5SDgrFD_6m5VpIEAzKIV4RA/viewform">ADOTAR</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <section id="help">
-    <h1 class="section-heading-1 purple-text text-center pt-4">Como Ajudar?</h1>
-    <p class="text-1 text-center paragraph-padding">Existem centenas de animais no abrigo, enquanto eles procuram suas novas famílias, precisam de cuidados, ração,
-      entre outras necessidades que trazem custos para o abrigo.</p>
-    <p class="text-1 text-center paragraph-padding">São as doações que nos permitem dar mais uma chance à vida para os bichinhos. Elas podem ser recorrentes ou
-      únicas, toda ajuda significa muito! </p>
-  </section>
+  <main class="page-margin">
 
-  <section id="tabs" class="container mt-5">
-    <ul class="nav nav-tabs" id="myTabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link donation-method active" id="home-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="home"
-          aria-selected="true">Pix</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link donation-method" id="profile-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="profile"
-          aria-selected="false">Cartão de Crédito (Única)</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link donation-method" id="messages-tab" data-toggle="tab" href="#donate" role="tab" aria-controls="messages"
-          aria-selected="false">Cartão de Crédito (Recorrente)</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="settings"
-          aria-selected="false">Depósito</a>
-      </li>
+    <!--Título e texto-->
+    <section id="help">
+      <h1 class="section-heading-1 purple-text text-center pt-4">Como Ajudar?</h1>
+      <p class="text-1 text-center paragraph-padding">Existem centenas de animais no abrigo, enquanto eles procuram suas
+        novas famílias, precisam de cuidados, ração,
+        entre outras necessidades que trazem custos para o abrigo.</p>
+      <p class="text-1 text-center paragraph-padding">São as doações que nos permitem dar mais uma chance à vida para os
+        bichinhos. Elas podem ser recorrentes ou
+        únicas, toda ajuda significa muito! </p>
+    </section>
 
-      <li class="nav-item" role="presentation">
-        <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#other" role="tab" aria-controls="settings"
-          aria-selected="false">Outros</a>
-      </li>
-    </ul>
+    <!--Opções de doação-->
+    <section id="tabs" class="container mt-5">
 
-    <div class="tab-content my-3" id="myTabContent">
-      <section id="donate" class="tab-pane fade show active text-center">
-        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
-          <div class="d-flex col align-items-center">
-            <a href=""> 
-            <div class="p-3 donation-amount-button">
-              <h2 class="donation-amount">R$ 10</h2>
-              <h6 class="donation-description">Alimenta um filhote por 10 dias.</h6>
+      <ul class="nav nav-tabs" id="myTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link donation-method active" id="home-tab" data-toggle="tab" href="#donate" role="tab"
+            aria-controls="home" aria-selected="true">Pix</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#cash" role="tab"
+            aria-controls="settings" aria-selected="false">Boleto/Cartão</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link donation-method" id="settings-tab" data-toggle="tab" href="#other" role="tab"
+            aria-controls="settings" aria-selected="false">Outros</a>
+        </li>
+      </ul>
+
+      <div class="tab-content my-3" id="myTabContent">
+
+        <!--Seção Pix-->
+        <section id="donate" class="tab-pane fade show active text-center">
+
+          <!--Opções de valores-->
+          <ul class="nav row row-cols-lg-4 row-cols-md-2 row-cols-1" id="donation-amount-options" role="tablist">
+            <li class="nav-item col align-items-center" role="presentation">
+              <a id="home-tab" data-toggle="tab" href="#r10" role="tab" aria-controls="home" aria-selected="true">
+                <div class="px-3 mb-3 donation-amount-button">
+                  <h2 class="donation-amount">R$ 10</h2>
+                  <h6 class="donation-description">Alimenta um filhote por 10 dias.</h6>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item col align-items-center" role="presentation">
+              <a id="settings-tab" data-toggle="tab" href="#r25" role="tab" aria-controls="settings"
+                aria-selected="false">
+                <div class="px-3 mb-3 donation-amount-button">
+                  <h2 class="donation-amount">R$ 25</h2>
+                  <h6 class="donation-description">Equivale a remédio vermífugo para 20 cães.</h6>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item col align-items-center" role="presentation">
+              <a id="50-tab" data-toggle="tab" href="#r50" role="tab" aria-controls="settings" aria-selected="false">
+                <div class="px-3 mb-3 donation-amount-button">
+                  <h2 class="donation-amount">R$ 50</h2>
+                  <h6 class="donation-description">Alimenta cinco filhotes por 10 dias.</h6>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item col align-items-center" role="presentation">
+              <a id="custom-tab" data-toggle="tab" href="#custom" role="tab" aria-controls="settings"
+                aria-selected="false">
+                <div class="px-3 mb-3 donation-amount-button">
+                  <h2 class="donation-amount">Outro Valor</h2>
+                  <h6 class="donation-description">Clique aqui para escolher o valor.</h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!--Conteúdo das opções de valores-->
+          <!--R$10-->
+          <section id="r10" class="tab-pane fade">
+            <div>
+              <img src="assets/qrcode-10.png" class="qrcode-pix mb-4" alt="">
+              <p class="text-1 pix-text mx-auto">
+                00020126500014BR.GOV.BCB.PIX0128larsilvanablumenau@gmail.com520400005303986540510.005802BR5918Abrigo Lar
+                Silvana6008Blumenau62070503***6304B0F4</p>
             </div>
-            </a>
-          </div>
+            <p class="mx-5 px-5">Agora é só escanear o QR code ou copiar o código do PIX e pagar no aplicativo de seu
+              banco de preferência, agradecemos muito a sua ajuda!</p>
+          </section>
 
-          <div class="d-flex col align-items-center">
-            <a href="">
-            <div class="p-3 donation-amount-button">
-              <h2 class="donation-amount">R$ 25</h2>
-              <h6 class="donation-description">Equivale a remédio vermifugo para 20 cães.</h6>
+          <!--R$25-->
+          <section id="r25" class="tab-pane fade">
+            <div>
+              <img src="assets/qrcode-25.png" class="qrcode-pix mb-4" alt="">
+              <p class="pix-text text-center mx-auto">
+                00020126500014BR.GOV.BCB.PIX0128larsilvanablumenau@gmail.com520400005303986540525.005802BR5918Abrigo Lar
+                Silvana6008Blumenau62070503***63047D60</p>
             </div>
-          </a>
-          </div>
+            <p class="mx-5 px-5">Agora é só escanear o QR code ou copiar o código do PIX e pagar no aplicativo de seu
+              banco de preferência, agradecemos muito a sua ajuda!</p>
+          </section>
 
-          <div class="d-flex col align-items-center">
-            <a href="">
-            <div class="p-3 donation-amount-button">
-              <h2 class="donation-amount">R$ 50</h2>
-              <h6 class="donation-description">Alimenta cinco filhotes por 10 dias.</h6>
+          <!--R$50-->
+          <section id="r50" class="tab-pane fade">
+            <div>
+              <img src="assets/qrcode-50.png" class="qrcode-pix mb-4" alt="">
+              <p class="pix-text text-center mx-auto">
+                00020126500014BR.GOV.BCB.PIX0128larsilvanablumenau@gmail.com520400005303986540550.005802BR5918Abrigo Lar
+                Silvana6008Blumenau62070503***63047D8A</p>
             </div>
-            </a>
-          </div>
+            <p class="mx-5 px-5">Agora é só escanear o QR code ou copiar o código do PIX e pagar no aplicativo de seu
+              banco de preferência, agradecemos muito a sua ajuda!</p>
+          </section>
 
-          <div class="d-flex col align-items-center">
-            <a href="">
-            <div class="p-3 donation-amount-button">
-              <h2 class="donation-amount">Outro Valor</h2>
-              <h6 class="donation-description">Clique aqui para escolher o valor.</h6>
+          <!--Outro Valor-->
+          <section id="custom" class="tab-pane fade">
+            <div>
+              <img src="assets/qrcode-pix.png" class="qrcode-pix mb-4" alt="">
+              <p class="pix-text text-center mx-auto">
+                00020126500014BR.GOV.BCB.PIX0128larsilvanablumenau@gmail.com5204000053039865802BR5918Abrigo Lar
+                Silvana6008Blumenau62070503***6304337D</p>
             </div>
-            </a>
-          </div>
-        </div>
-      </section>
+            <p class="mx-5 px-5">Agora é só escanear o QR code ou copiar o código do PIX e pagar no aplicativo de seu
+              banco de preferência, agradecemos muito a sua ajuda!</p>
+          </section>
 
-      <section class="tab-pane fade" id="cash">
-        <div class="donation-card">
-          <div class="donation-card-header">
-            Dados Bancários
-          </div>
-          <div class="donation-card-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quis cupidiuptates non ex laudantium
-            ipsa consequuntur. Beatae exercitationem quidem voluptatibus alias ipsum.
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="tab-pane fade" id="other">
-        <div class="donation-card">
-          <div class="donation-card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus dolorum temporibus nemo
-            dolores quia neque facilis beatae ullam vitae totam iste voluptate laborum, impedit illum rem eligendi magni
-            dicta! <br><br>
-            <button type="button" id="buttonModal" class="btn btn-primary button-purple" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Abrir Lista
-            </button>
-          </div>
-  
-        </div>
+        <!--Boleto/Cartão-->
+        <section class="tab-pane fade" id="cash">
+          <div class="donation-card">
+            <div class="donation-card-header">
+              Plataformas
+            </div>
+            <div class="donation-card-body">
+              <p>Você pode realizar doações usando boleto ou cartão nos sites em que possuímos campanhas ativas:</p>
+              
+              <a target="_blank" class="donation-platform-link py-2" href="">
+                <img src="assets/logo-vakinha.png" class="platform-logo" alt="">
+              </a>
+              <p>(Doações únicas por boleto ou cartão)</p>  
+              
+              <a target="_blank" class="donation-platform-link py-2" href="">
+                <img src="assets/logo-apoiase.png" class="platform-logo" alt="">
+              </a>
+              <p>(Doações recorrentes por boleto ou cartão)</p>  
+              
+              <a target="_blank" class="donation-platform-link py-2" href="">
+                <img src="assets/logo-picpay.png" class="platform-logo" alt="">
+              </a>
+              <p>(Doação pelo app do PicPay)</p>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5 purple-text" id="exampleModalLabel">Lista de produtos em demanda</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </section>
+
+        <!--Outros-->
+        <section class="tab-pane fade" id="other">
+          <div class="donation-card">
+            <div class="donation-card-body">
+              Nós também aceitamos doações não financeiras! Clique no botão abaixo para ver os itens que precisamos para
+              o funcionamento do abrigo. <br><br>
+              <button type="button" id="buttonModal" class="btn btn-primary button-purple" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Abrir Lista
+              </button>
+            </div>
+
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 purple-text" id="exampleModalLabel">Lista de produtos em demanda</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Ração</li>
+                    <li>Vermífugos</li>
+                    <li>Remédios veterinários</li>
+                    <li>Soro fisiológico</li>
+                    <li>Luvas, algodão, gaze</li>
+                    <li>Vacinas</li>
+                    <li>Anti-pulgas</li>
+                    <li>Caixas de transporte</li>
+                    <li>Camas, casinhas e cobertores</li>
+                    <li>Produtos de higiene para cães e gatos</li>
+                    <li>Tapetes higiênicos</li>
+                  </ul>
+                </div>
               </div>
-              <div class="modal-body">
-                <ul>
-                  <li>Ração</li>
-                  <li>Patês</li>
-                  <li>Areia</li>
-                  <li>Vermífugos</li>
-                  <li>Remédios veterinários ou humanos</li>
-                  <li>Soro fisiológico</li>
-                  <li>Luvas, algodão, gaze</li>
-                  <li>Vacinas</li>
-                  <li>Anti-pulgas</li>
-                  <li>Caixas de transporte</li>
-                  <li>Camas, casinhas e cobertores</li>
-                  <li>Produtos de higiene para cães e gatos</li><li>Tapetes higiênicos</li>
-                  
-                </ul>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-5 mt-5">
+    <div class="row">
+      <h3 class="ps-5">©2023</h3>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-md-12 col-lg-4 pb-5 ps-5">
+        <p class="">Esse site foi desenvolvido por alunos do Bacharelado em Ciência da Computação do IFC Campus
+          Blumenau. <a href="sobre.html">Saiba mais.</a></p><br>
+        <h5>Desenvolvimento do site:</h5>
+        <p>Halena Kulmann Duarte - <a target="_blank" href="https://github.com/halenakd"><i
+              class="fa-brands fa-github"></i>/halenakd</a></p>
+        <p>Sofia Lima dos Santos - <a target="_blank" href="https://github.com/slimasofia"><i
+              class="fa-brands fa-github"></i>/slimasofia</a></p>
+        <p>Estevão Goerll Nascimento - <a target="_blank" href="https://github.com/goerll"><i
+              class="fa-brands fa-github"></i>/goerll</a></p>
+      </div>
+
+      <div class="col-md-12 col-lg-2 pb-5 ps-5">
+        <h4>Seções</h4>
+        <p><a href="index.html">Início</a></p>
+        <p><a href="adotar.html">Adotar</a></p>
+        <p><a href="doar.html">Doar</a></p>
+        <p><a href="contato.html">Contato</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+        <p><a href="login.html">Login</p></a>
+      </div>
+      <div class="col-md-7 col-lg-3 pb-5 ps-5">
+        <h4>Contato</h4>
+        <p><a target="_blank" href="https://api.whatsapp.com/send/?phone=5547992721258"><i
+              class="fa-brands fa-square-whatsapp fa-xl pe-2"></i>+55 47 99272-1258</a></p>
+        <p><a target="_blank" href="https://www.facebook.com/Silvanalartemporario/"><i
+              class="fa-brands fa-square-facebook fa-xl pe-2"></i>@silvanalartemporario</a></p>
+        <p><a target="_blank" href="https://www.instagram.com/protetorasilvanapereira/"><i
+              class="fa-brands fa-square-instagram fa-xl pe-2"></i>@protetorasilvanapereira</a></p>
+        <p><a target="_blank" href="mailto:larsilvanablumenau@gmail.com"><i
+              class="fa-solid fa-square-envelope fa-xl pe-2"></i>larsilvanablumenau</a></p>
+      </div>
+
+      <div class="col-md-4 col-lg-2 ps-5">
+        <h4>Endereço</h4>
+        <p><a target="_blank" href="https://maps.app.goo.gl/JR7oXC6m9tE4Xw3XA">Rua Dr. Pedro Zimmermann, 11892</a></p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="bootstrap.bundle.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ee611774f3.js" crossorigin="anonymous"></script>
 
 </body>
+
 
 </html>
